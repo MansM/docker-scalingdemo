@@ -8,6 +8,6 @@ docker-machine ip dockervmname
 docker-compose build
 docker-compose up
 
-consul ui: http://dockervmip:8500
-haproxy stats: http://dockervmip:9000/haproxy_stats
-website (just php posting hostname) http://dockervmip 
+* consul ui: http://dockervmip:8500
+* haproxy stats: http://dockervmip:9000/haproxy_stats
+* website (just php posting hostname) http://dockervmip 
