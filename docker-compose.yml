@@ -1,0 +1,14 @@
+consul:
+  image: gliderlabs/consul-server
+  net: "host"
+  command: -bootstrap
+web:
+  build: haproxy
+  ports:
+   - "80:80"
+   - "9000:9000"
+  links:
+   - apachephp
+apachephp:
+  build: apachephp
+
