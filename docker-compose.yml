@@ -3,15 +3,15 @@ consul:
   command: -bootstrap
   ports:
    - "8500:8500"
-web:
+loadbalancer:
   build: haproxy
   ports:
    - "80:80"
    - "9000:9000"
   links:
-   - apachephp
+   - web
    - consul
-apachephp:
+web:
   build: apachephp
   links:
     - consul
