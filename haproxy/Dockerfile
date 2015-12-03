@@ -13,7 +13,6 @@ RUN mkdir -p /var/log/supervisor
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY haproxy.ctmpl /etc/haproxy.ctmpl
 COPY haproxy.json /etc/haproxy.json
-COPY haproxy.cfg /etc/haproxy/haproxy.cfg
 
 EXPOSE 80/tcp 9000/tcp
 CMD ["/usr/bin/supervisord"]
