@@ -1,1 +1,8 @@
-{"service": {"name": "web", "tags": ["rails"], "port": 80}, "leave_on_terminate": true}
+{
+	"service": {
+		"name": "web",
+		"tags": ["php"],
+		"port": 80
+	},
+	"leave_on_terminate": true
+}
