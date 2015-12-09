@@ -1,5 +1,5 @@
 FROM php:5.6-apache
-ENV CONSUL_AGENT_VERSION=0.5.2
+ENV CONSUL_AGENT_VERSION=0.6.0
 
 RUN apt-get update && apt-get install -y supervisor wget unzip
 RUN apt-get clean

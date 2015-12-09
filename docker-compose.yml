@@ -1,6 +1,6 @@
 consul:
   image: gliderlabs/consul-server
-  command: -bootstrap
+  command: -bootstrap-expect 1
   ports:
    - "8500:8500"
 loadbalancer:
